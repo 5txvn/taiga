@@ -26,27 +26,27 @@ $ touch main.tai
 Now, you are set up for your Taiga project!
 <h3>Tutorial</h3>
 <h6>Variables/Constants</h6>
-In Taiga, just like in regular Javascript, you have variables and constants. They are used to assign values to names for simplicity. To declare constants, use the @ symbol, or use the <b>constant keyword
+In Taiga, just like in regular Javascript, you have variables and constants. They are used to assign values to names for simplicity. To declare constants, use the <b>@</b> symbol, or use the <b>constant</b> keyword
 <pre>
 @example = "Hello World"
 constant example = "Hello World"
 </pre>
-To declare variables/let, use the ~ operator, or use the variable keyword
+To declare variables/let, use the <b>~</b> operator, or use the <b>variable</b> keyword
 <pre>
 ~example = "Hello World"
 variable example = "Hello World"
 </pre>
-To explicitly define a variable as global (can be accessed anywhere in the code), use the gb or the global keyword
+To explicitly define a variable as global (can be accessed anywhere in the code), use the <b>gb</b> or the <b>global</b> keyword
 <pre>
 gb example = "Hello World"
 global example = "Hello World"
 </pre>
 <h6>Comments</h6>
-Comments are ignored by the interpreter and are used to organize your code. Single line comments are comments that span only one line. To declare a single line comment in Taiga, use the # symbol. 
+Comments are ignored by the interpreter and are used to organize your code. Single line comments are comments that span only one line. To declare a single line comment in Taiga, use the <b>#</b> symbol. 
 <pre>
 #this is a comment
 </pre>
-Multiple line comments are comments that span multiple lines. To declare multiple line comments, start it with the -> symbol and end it with the <- symbol
+Multiple line comments are comments that span multiple lines. To declare multiple line comments, start it with the <b>-></b> symbol and end it with the <b><-</b> symbol
 <pre>
 ->
 this
@@ -58,7 +58,7 @@ comment
 <-
 </pre>
 <h6>Printing to the Console</h6>
-In Taiga, you can print a string, number, or whatever by using the pr keyword
+In Taiga, you can print a string, number, or whatever by using the <b>pr</b> keyword
 <pre>
 pr "Hello World"
 #output is: Hello World
@@ -71,12 +71,12 @@ Hello World
 Hello Earth
 <-
 </pre>
-If you need to (for whatever reason) use a function for this purpose, there is a print function in Taiga
+If you need to (for whatever reason) use a function for this purpose, there is a <b>print</b> function in Taiga
 <pre>
 print("Hello World")
 </pre>
 <h6>Printing Errors to the Console</h6>
-To print errors to the console, use the er keyword
+To print errors to the console, use the <b>er</b> keyword
 <pre>
 er "Error"
 #output is: Error
@@ -96,7 +96,7 @@ boolean
 <-
 </pre>
 <h6>Functions</h6>
-Functions are lines of code that can be executed as a whole. In Taiga, you can declare functions using the def or func keyword (I personally prefer using func). If you are creating a function with no arguements, then there is a function shorthand where you don't need to use parentheses, but it is required to use parentheses when calling the function.
+Functions are lines of code that can be executed as a whole. In Taiga, you can declare functions using the <b>def</b> or <b>func</b> keyword (I personally prefer using func). If you are creating a function with no arguements, then there is a function shorthand where you don't need to use parentheses, but it is required to use parentheses when calling the function.
 <pre>
 func helloWorld
     pr "Hello World"
@@ -121,7 +121,7 @@ add(2, 2)
 #output is: 4
 </pre>
 <h6>Return</h6>
-To return something, you can use the $r keyword or the ret keyword as shown below
+To return something, you can use the <b>$r</b> keyword or the <b>ret</b> keyword as shown below
 <pre>
 func helloWorld
     $r "Hello World"
@@ -175,7 +175,7 @@ end
 #output is: The number is 4
 </pre>
 <h6>FOR Loop</h6>
-A for loop repeats an action a certain amount of times. In Taiga, with a for loop, you would use the lf (loop for) keyword and you would have three options, the loop variable, the starting interval, and the end interval. Here is an example of counting 0-9 with a for loop with Taiga.
+A for loop repeats an action a certain amount of times. In Taiga, with a for loop, you would use the <b>lf</b> (loop for) keyword and you would have three options, the loop variable, the starting interval, and the end interval. Here is an example of counting 0-9 with a for loop with Taiga.
 <pre>
 lf x 0 10
     pr x
@@ -197,7 +197,7 @@ output is:
 </pre>
 In this example, we create an interval that starts at 0, and them keeps looping until the number becomes equal to (or greater than) the final interval. Inside the loop, we print x every time we go through the loop, and the value of x increments by one each time we go through the loop.
 <h6>WHILE Loop</h6>
-A while loop loops a certain piece of code until a condition becomes true. For example, we can create a variable, x, and then run it through a while loop, incrementing it until x becomes greater than 9 (not less than 10). Here is that example.
+A while loop loops a certain piece of code until a condition becomes true. You would use the <b>lw</b> keyword to make the while loop. For example, we can create a variable, x, and then run it through a while loop, incrementing it until x becomes greater than 9 (not less than 10). Here is that example.
 </pre>
 ~x = 0
 lw x&lt;10
@@ -207,7 +207,7 @@ end
 </pre>
 <h6>Boolean Operator</h6>
 In Taiga, there are 3 main boolean operators (not talking about true/false). There is OR, AND, and NOT.
-In Javascript, the OR operator is ||, the AND operator is &&, and the NOT operator is !. Here is an example with the AND operator (and)
+In Javascript, the OR operator is ||, the AND operator is &&, and the NOT operator is !. Here is an example with the AND operator in Taiga <b>(and)</b>
 <pre>
 ~x = 1
 ~y = 1
@@ -221,7 +221,7 @@ end
 
 #output is: X and Y are equal and equal to 1
 </pre>
-Here is an example with the OR operator (or)
+Here is an example with the OR operator <b>(or)</b>
 <pre>
 ~x = 1
 ~y = 2
@@ -233,7 +233,7 @@ end
 
 #output: X, Y, or both X and Y are equal to 2
 </pre>
-Here is an example with the NOT operator (not)
+Here is an example with the NOT operator <b>(not)</b>
 <pre>
 ~x = 1
 if x not == 1
