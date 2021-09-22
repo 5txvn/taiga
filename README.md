@@ -5,10 +5,7 @@ Taiga is an extremely minimalist "programming language." In theory, you could ca
 <h3>The Programming Language in Slightly Above 200 Lines of Code</h3>
 The actual compiler part of Taiga is slightly above 200 lines of code (210 lines as of version 1.0.0), which is incredible considering it has an entirely different syntax compared to Javascript. Taiga only consists of a tokenizer, and that is just about it, as simple as can be. Taiga is small, fast, and efficient.
 <h3>Installation</h3>
-First, make sure that you have Node.js installed on your system. If you do, you can install the Taiga CLI by executing the following command in your shell
-```
-$ npm install taiga-lang --global
-```
+First, make sure that you have Node.js installed on your system. If you do, you can install the Taiga CLI by executing the following command in your shell `$ npm install taiga-lang --global`
 <h3>Usage</h3>
 Create a directory for your Taiga project and navigate to it
 ```
