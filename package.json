@@ -1,0 +1,28 @@
+{
+  "name": "taiga-lang",
+  "version": "1.0.0",
+  "description": "A simple, minimalist, and lightweight programming language/Javascript syntax-superset",
+  "main": "./bin/index.js",
+  "bin": {
+    "taiga": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exoticchild/taiga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exoticchild/taiga/issues"
+  },
+  "homepage": "https://github.com/exoticchild/taiga#readme",
+  "dependencies": {
+    "js-tokens": "^7.0.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {}
+}
